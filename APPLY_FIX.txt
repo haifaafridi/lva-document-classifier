@@ -1,0 +1,37 @@
+LVA RETRIEVAL ACCURACY FIX v4
+=============================
+
+WHY v3 WAS CHANGED
+------------------
+The v3 benchmark improved Top-1 from 60% to 70%, but Accounts Payable still missed Top-3.
+The returned candidates showed that the optional TinyBERT cross-encoder was not reliable enough
+for this LVA dataset, so it is no longer enabled by default.
+
+WHAT v4 DOES
+------------
+1. Keeps the Week-8 long-document chunks.
+2. Also creates short sentence-level retrieval evidence from the same document.
+3. Embeds BOTH levels with the same BGE model and searches Milvus with all query vectors.
+4. Improves local BM25 using repeated query terms and sentence-level purpose evidence.
+5. Uses deterministic dense+lexical hybrid score fusion by default.
+6. Keeps a stronger MiniLM-L6 cross-encoder available only as an optional benchmark.
+7. Prints dense/lexical target ranks when a benchmark case misses.
+
+APPLY
+-----
+Stop npm start first.
+Copy this update on top of your existing lva-week10-build project.
+Do NOT copy/replace your .env manually.
+Do NOT reseed Milvus.
+Do NOT run npm install.
+
+IMPORTANT .env CHECK
+--------------------
+If your existing .env contains:
+RERANKER_ENABLED=true
+change it to:
+RERANKER_ENABLED=false
+
+Then run:
+npm test
+npm run evaluate:retrieval

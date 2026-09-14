@@ -1,0 +1,28 @@
+LVA STARTUP WARM-UP / LATENCY STABILITY UPDATE v6.3 (project version 2.2.0)
+
+1. Stop npm start with Ctrl+C.
+2. Copy this flat patch over the existing lva-week10-build folder.
+3. Keep your existing .env. This patch does NOT contain .env.
+4. Do NOT run the Milvus seed.
+5. Run:
+   npm pkg get version
+   npm run verify:update
+   npm test
+   npm run warmup:check
+   npm start
+
+Expected startup behavior:
+- Before the server announces http://localhost:3000, it preloads BGE/tokenizer,
+  prepares Azure storage, connects to Zilliz and performs one 1-hit vector search.
+- With STARTUP_WARMUP_OCR=true it also prepares the Tesseract OCR worker.
+- Gemini is NOT called during warm-up, so startup does not consume classifier API quota.
+
+Latency test after startup optimization:
+  npm run benchmark:latency -- ".\\test-documents\\01_supplier_invoice_payment_packet.pdf" 5
+
+Optional cold comparison in a fresh Node process:
+  npm run benchmark:latency -- ".\\test-documents\\01_supplier_invoice_payment_packet.pdf" 5 --cold
+
+Environment toggles (optional):
+  STARTUP_WARMUP=true
+  STARTUP_WARMUP_OCR=true

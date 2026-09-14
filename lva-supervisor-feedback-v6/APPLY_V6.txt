@@ -1,0 +1,21 @@
+LVA SUPERVISOR FEEDBACK UPDATE v6
+=================================
+
+1. Stop npm start with Ctrl+C.
+2. Extract this ZIP.
+3. Copy the CONTENTS of lva-supervisor-feedback-v6 over your existing project folder:
+   C:\Users\Haifa Afridi\Desktop\lva-week10-build
+4. Do NOT replace your existing .env file. This update contains only .env.example.
+5. No npm install is required (no new dependency was added).
+6. Do NOT reseed Milvus/Zilliz.
+7. Run:
+      npm test
+      npm start
+8. Classify a known test file and confirm the new Record series panel appears.
+9. To investigate variable latency, run the SAME file 3 times:
+      npm run benchmark:latency -- ".\test-documents\01_supplier_invoice_payment_packet.pdf" 3
+10. To test all included formats/OCR flows:
+      npm run evaluate:formats
+
+The server console now prints stage timings for every /classify call.
+The public API response also includes a safe `processing` object and a Server-Timing header.

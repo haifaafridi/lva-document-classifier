@@ -1,0 +1,53 @@
+{
+  "name": "lva-document-classifier-week10",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "description": "SPS Summer Internship 2026 - LVA Document Classifier through Week 10",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test",
+    "data:validate": "node scripts/validateScheduleData.js",
+    "milvus:health": "node scripts/milvusHealth.js",
+    "milvus:seed": "node scripts/seedMilvus.js",
+    "milvus:status": "node scripts/milvusStatus.js",
+    "milvus:search": "node scripts/searchMilvus.js",
+    "milvus:search-doc": "node scripts/retrieveDocument.js",
+    "lva:sync": "node scripts/syncLocalitySchedules.js",
+    "lva:sync-and-seed": "node scripts/syncAndSeedAllLocalitySchedules.js",
+    "milvus:status-all": "node scripts/milvusStatusAllLocalities.js",
+    "classifier:health": "node scripts/classifierHealth.js",
+    "chunk:inspect": "node scripts/inspectChunking.js",
+    "evaluate:retrieval": "node scripts/evaluateRetrieval.js",
+    "evaluate:end-to-end": "node scripts/evaluateEndToEnd.js",
+    "benchmark:embeddings": "node scripts/benchmarkEmbeddingModels.js",
+    "benchmark:classifiers": "node scripts/benchmarkClassifierModels.js",
+    "evaluate:formats": "node scripts/evaluateFormatFlow.js",
+    "benchmark:latency": "node scripts/benchmarkLatency.js"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.33.0",
+    "@google/genai": "2.19.0",
+    "@huggingface/transformers": "4.2.0",
+    "@napi-rs/canvas": "1.0.8",
+    "@zilliz/milvus2-sdk-node": "2.6.10",
+    "cheerio": "^1.0.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mammoth": "^1.12.1",
+    "multer": "^2.0.2",
+    "pdfjs-dist": "6.2.108",
+    "sharp": "0.35.3",
+    "tesseract.js": "7.0.0",
+    "word-extractor": "^1.0.4",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "overrides": {
+    "adm-zip": "0.6.0",
+    "sharp": "0.35.3"
+  }
+}

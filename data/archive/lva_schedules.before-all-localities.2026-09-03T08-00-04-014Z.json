@@ -1,0 +1,1052 @@
+[
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010143",
+    "series_title": "Accounts Payable",
+    "series_description": "This series documents moneys to be paid by the locality to its creditors. This series may include, but is not limited to: invoices, receipts, bills, canceled checks, returned checks, check registers, and checking statements.",
+    "series_retention_period": "3 Years after end of state fiscal year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Accounts Payable: This series documents moneys to be paid by the locality to its creditors. This series may include, but is not limited to: invoices, receipts, bills, canceled checks, returned checks, check registers, and checking statements."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010144",
+    "series_title": "Accounts Receivable",
+    "series_description": "This series documents moneys owed to the locality by its debtors. This series may include, but is not limited to: deposit receipts, invoices, bills, purchase orders, vouchers, permits, and receipt records.",
+    "series_retention_period": "3 Years after end of state fiscal year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Accounts Receivable: This series documents moneys owed to the locality by its debtors. This series may include, but is not limited to: deposit receipts, invoices, bills, purchase orders, vouchers, permits, and receipt records."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010146",
+    "series_title": "Audit Records: External",
+    "series_description": "This series documents the audit of the finances of the locality by an outside auditing firm. This series may include, but is not limited to: locality's working papers and prepared audit report. COV 15.2-2511",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Audit Records: External: This series documents the audit of the finances of the locality by an outside auditing firm. This series may include, but is not limited to: locality's working papers and prepared audit report. COV 15.2-2511"
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010145",
+    "series_title": "Audit Records: Internal",
+    "series_description": "This series documents the audits conducted by the locality on its various departments and agencies. This series may include, but is not limited to: audit report and work papers.",
+    "series_retention_period": "8 Years after end of state fiscal year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Audit Records: Internal: This series documents the audits conducted by the locality on its various departments and agencies. This series may include, but is not limited to: audit report and work papers."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010150",
+    "series_title": "Budget Records: Adopted Budget Files",
+    "series_description": "This series documents the adopted locality budget, outlining approved expenditures for the year.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Budget Records: Adopted Budget Files: This series documents the adopted locality budget, outlining approved expenditures for the year."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010151",
+    "series_title": "Budget Records: Working Files",
+    "series_description": "This series documents the budgeting process of the locality. This series may include, but is not limited to: working files.",
+    "series_retention_period": "5 Years after end of state fiscal year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Budget Records: Working Files: This series documents the budgeting process of the locality. This series may include, but is not limited to: working files."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "200104",
+    "series_title": "Cash and Bank Reports",
+    "series_description": "This series documents financial transactions within the locality. This series may include, but is not limited to: cash reports, transmittal and settlement records, warrant records, bank statements, and reconciliation documentation.",
+    "series_retention_period": "3 Years after end of state fiscal year",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Cash and Bank Reports: This series documents financial transactions within the locality. This series may include, but is not limited to: cash reports, transmittal and settlement records, warrant records, bank statements, and reconciliation documentation."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010159",
+    "series_title": "Contracts",
+    "series_description": "This series documents contracts and agreements entered into by the locality. The series may include, but is not limited to: contract and supporting documentation.",
+    "series_retention_period": "5 Years after expiration",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Contracts: This series documents contracts and agreements entered into by the locality. The series may include, but is not limited to: contract and supporting documentation."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010162",
+    "series_title": "Financial Accounting Reports",
+    "series_description": "This series documents the income and expenditures of the locality by its offices and agencies.",
+    "series_retention_period": "3 Years after end of state fiscal year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Financial Accounting Reports: This series documents the income and expenditures of the locality by its offices and agencies."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010163",
+    "series_title": "Fixed Assets Files",
+    "series_description": "This series documents the control of fixed assets, such as land, buildings, and equipment, owned by the agency. This series may include, but is not limited to: logs, inventories, and reconciliation documents.",
+    "series_retention_period": "0 Years after equipment, facility, or property sold or no longer in use",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Fixed Assets Files: This series documents the control of fixed assets, such as land, buildings, and equipment, owned by the agency. This series may include, but is not limited to: logs, inventories, and reconciliation documents."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010169",
+    "series_title": "General Ledger",
+    "series_description": "This series documents the assets, liabilities, fund balances, revenues, and expenses of the locality. This series may include, but is not limited to: ledger, ledger cards, journals, and reports.",
+    "series_retention_period": "10 Years after end of state fiscal year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "General Ledger: This series documents the assets, liabilities, fund balances, revenues, and expenses of the locality. This series may include, but is not limited to: ledger, ledger cards, journals, and reports."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010164",
+    "series_title": "Grant Projects: Financials",
+    "series_description": "This series documents the annual financial management of state, federal, and/or private grant projects participated in or awarded/administered by local agencies that do not contain contractual terms for records retention. This series may include, but is not limited to: accounts payables and receivables, draw-down requests, and fiscal reports.",
+    "series_retention_period": "3 Years after end of state fiscal year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Grant Projects: Financials: This series documents the annual financial management of state, federal, and/or private grant projects participated in or awarded/administered by local agencies that do not contain contractual terms for records retention. This series may include, but is not limited to: accounts payables and receivables, draw-down requests, and fiscal reports."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010165",
+    "series_title": "Insurance Records and Reports",
+    "series_description": "This series documents insurance coverage carried by the locality, such as commercial policies, third-party coverage, and self-insurance programs. This series may include, but is not limited to: insurance policies, claims, invoices, and investment files.",
+    "series_retention_period": "3 Years after end of state fiscal year",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Insurance Records and Reports: This series documents insurance coverage carried by the locality, such as commercial policies, third-party coverage, and self-insurance programs. This series may include, but is not limited to: insurance policies, claims, invoices, and investment files."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "200105",
+    "series_title": "Payroll Records",
+    "series_description": "This series documents the payroll activities of the locality. This series may include, but is not limited to: deduction authorizations and registers, leave records, ledgers and reports, compensation files, retirement contributions, time and attendance records, time sheets, Virginia Employment Commission (VEC) reports, wage and income tax reports, W-2 Wage and Tax Statements, and Form 1099.",
+    "series_retention_period": "5 Years after end of state fiscal year",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Payroll Records: This series documents the payroll activities of the locality. This series may include, but is not limited to: deduction authorizations and registers, leave records, ledgers and reports, compensation files, retirement contributions, time and attendance records, time sheets, Virginia Employment Commission (VEC) reports, wage and income tax reports, W-2 Wage and Tax Statements, and Form 1099."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "200106",
+    "series_title": "Purchasing Records",
+    "series_description": "This series documents the purchasing of equipment, goods, services, and supplies by the locality. This series may include, but is not limited to: bids, bid proposals, contracts, agreements, purchase orders, and requisitions.",
+    "series_retention_period": "5 Years after end of state fiscal year",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Purchasing Records: This series documents the purchasing of equipment, goods, services, and supplies by the locality. This series may include, but is not limited to: bids, bid proposals, contracts, agreements, purchase orders, and requisitions."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010190",
+    "series_title": "Reimbursement Records",
+    "series_description": "This series documents the reimbursement of money to or from the locality. This series may include, but is not limited to: travel expense reimbursement and overpayment documentation.",
+    "series_retention_period": "3 Years after end of state fiscal year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Reimbursement Records: This series documents the reimbursement of money to or from the locality. This series may include, but is not limited to: travel expense reimbursement and overpayment documentation."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "200107",
+    "series_title": "Retirement Files: Locally Managed Retirement System",
+    "series_description": "This series documents the locally managed retirement system. This series may include, but is not limited to: employee participating and financial documentation.",
+    "series_retention_period": "3 Years after last action",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Retirement Files: Locally Managed Retirement System: This series documents the locally managed retirement system. This series may include, but is not limited to: employee participating and financial documentation."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010194",
+    "series_title": "Retirement Files: Virginia Retirement System (VRS)",
+    "series_description": "This series documents the participation of the locality in the Virginia Retirement System.",
+    "series_retention_period": "3 Years after end of state fiscal year",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Retirement Files: Virginia Retirement System (VRS): This series documents the participation of the locality in the Virginia Retirement System."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "200391",
+    "series_title": "Vendor / Supplier Records",
+    "series_description": "This series documents the information of vendors and suppliers that provide goods and services. This series may include, but is not limited to: correspondence, W-9 and 1099 forms, Internal Revenue Service Taxpayer Identification Number (IRS TIN) match form, alternate payment address notice, and Automatic Clearing House (ACH) payment form.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Vendor / Supplier Records: This series documents the information of vendors and suppliers that provide goods and services. This series may include, but is not limited to: correspondence, W-9 and 1099 forms, Internal Revenue Service Taxpayer Identification Number (IRS TIN) match form, alternate payment address notice, and Automatic Clearing House (ACH) payment form."
+  },
+  {
+    "schedule_number": "GS-02",
+    "schedule_title": "Fiscal Records",
+    "series_number": "010218",
+    "series_title": "Workers' Compensation Records",
+    "series_description": "This series documents claims filed based on work-related injury or illness. This series may include, but is not limited to: claims, application for benefits, wage documents used to determine compensation, and payment documentation.",
+    "series_retention_period": "5 Years after end of state fiscal year",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Workers' Compensation Records: This series documents claims filed based on work-related injury or illness. This series may include, but is not limited to: claims, application for benefits, wage documents used to determine compensation, and payment documentation."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010021",
+    "series_title": "Acknowledgment and Referral Files",
+    "series_description": "This series documents receipt of an item or forwarding of an item to another office when no other action is taken or expected of the forwarding office.",
+    "series_retention_period": "3 Months after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Acknowledgment and Referral Files: This series documents receipt of an item or forwarding of an item to another office when no other action is taken or expected of the forwarding office."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010024",
+    "series_title": "Agenda and Supporting Documentation Files",
+    "series_description": "This series documents the publishing of public notices of meetings and proposed schedules. This series may include, but is not limited to: materials reviewed or used by the board, commission, or conference, and items presented to or introduced by the board, commission, or conference. COV 2.2-3707",
+    "series_retention_period": "3 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Agenda and Supporting Documentation Files: This series documents the publishing of public notices of meetings and proposed schedules. This series may include, but is not limited to: materials reviewed or used by the board, commission, or conference, and items presented to or introduced by the board, commission, or conference. COV 2.2-3707"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010025",
+    "series_title": "Agreements, Memorandums of Understanding (MOU) and Non-Fiscal Contracts",
+    "series_description": "This series documents agreements, other than contracts involving procurement or payment of monies, between departments within the locality, other localities, other government agencies, business entities or an individual or group of individuals.",
+    "series_retention_period": "3 Years after termination",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Agreements, Memorandums of Understanding (MOU) and Non-Fiscal Contracts: This series documents agreements, other than contracts involving procurement or payment of monies, between departments within the locality, other localities, other government agencies, business entities or an individual or group of individuals."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010002",
+    "series_title": "Annexation/Consolidation Files",
+    "series_description": "This series documents locality arguments, fact finding, and actions on agreements or disputes among counties, cities and towns, or decisions of the Commission on Local Government boundary changes to cities and towns. COV 15.2-3200 - 3244f",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Annexation/Consolidation Files: This series documents locality arguments, fact finding, and actions on agreements or disputes among counties, cities and towns, or decisions of the Commission on Local Government boundary changes to cities and towns. COV 15.2-3200 - 3244f"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010008",
+    "series_title": "Annual Disclosure of Economic Interests",
+    "series_description": "This series consists of the disclosure of economic interest forms filed by members of governing bodies, commissions, and boards. COV 2.2-3115; COV 2.2-3117; COV 2.2-3115C",
+    "series_retention_period": "5 Years after end of calendar year",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Annual Disclosure of Economic Interests: This series consists of the disclosure of economic interest forms filed by members of governing bodies, commissions, and boards. COV 2.2-3115; COV 2.2-3117; COV 2.2-3115C"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010027",
+    "series_title": "Appointment Calendars",
+    "series_description": "This series documents the agenda of public officials. This series may include, but is not limited to: printed or published calendars intended for limited or general distribution.",
+    "series_retention_period": "1 Year after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Appointment Calendars: This series documents the agenda of public officials. This series may include, but is not limited to: printed or published calendars intended for limited or general distribution."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010091",
+    "series_title": "Approved Forms Masters and Supporting Documentation",
+    "series_description": "This series documents the development, design, approval, and use of forms.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Approved Forms Masters and Supporting Documentation: This series documents the development, design, approval, and use of forms."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010004",
+    "series_title": "Citizen Complaint Files",
+    "series_description": "This series documents citizen complaints, preliminary investigations, findings, background material and responses.",
+    "series_retention_period": "1 Year after last action",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Citizen Complaint Files: This series documents citizen complaints, preliminary investigations, findings, background material and responses."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010005",
+    "series_title": "Citizen Petitions",
+    "series_description": "This series documents receipt of a petition from citizens, preliminary research, and responses. COV 15.2-301",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Citizen Petitions: This series documents receipt of a petition from citizens, preliminary research, and responses. COV 15.2-301"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010033",
+    "series_title": "Consultants' Reports and Related Documents",
+    "series_description": "This series documents the work of consultants hired by the locality. This series may include, but is not limited to: consultant reports and notes.",
+    "series_retention_period": "5 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Consultants' Reports and Related Documents: This series documents the work of consultants hired by the locality. This series may include, but is not limited to: consultant reports and notes."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200101",
+    "series_title": "Contract Records",
+    "series_description": "This series documents the performance and conformance of contractual obligations of the locality or owed to the locality.",
+    "series_retention_period": "5 Years after termination",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Contract Records: This series documents the performance and conformance of contractual obligations of the locality or owed to the locality."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "100893",
+    "series_title": "Correspondence/Subject Files: Board Members - Except Chairpersons",
+    "series_description": "This series documents incoming and outgoing letters, memoranda, faxes, notes, and their attachments, in any format including, but not limited to, paper and e-mail.",
+    "series_retention_period": "3 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Correspondence/Subject Files: Board Members - Except Chairpersons: This series documents incoming and outgoing letters, memoranda, faxes, notes, and their attachments, in any format including, but not limited to, paper and e-mail."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "100891",
+    "series_title": "Correspondence/Subject Files: Board/Council - Mandated by Code of Virginia or Virginia Administrative Code - Chairpersons",
+    "series_description": "This series documents the correspondence of code mandated boards. This series may include, but is not limited to: letters, memoranda, faxes, notes, e-mail and attachments.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, Archives",
+    "text_to_embed": "Correspondence/Subject Files: Board/Council - Mandated by Code of Virginia or Virginia Administrative Code - Chairpersons: This series documents the correspondence of code mandated boards. This series may include, but is not limited to: letters, memoranda, faxes, notes, e-mail and attachments."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "100892",
+    "series_title": "Correspondence/Subject Files: Boards/Commissions/Conferences",
+    "series_description": "This series documents incoming and outgoing letters, memoranda, faxes, notes, and their attachments, in any format including, but not limited to, paper and e-mail.",
+    "series_retention_period": "3 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Correspondence/Subject Files: Boards/Commissions/Conferences: This series documents incoming and outgoing letters, memoranda, faxes, notes, and their attachments, in any format including, but not limited to, paper and e-mail."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010006",
+    "series_title": "Correspondence/Subject Files: City Manager/County Administrator",
+    "series_description": "This series consists of incoming and outgoing letters, memorandum, faxes, notes and their attachments, in any format including, but not limited to, paper and electronic mail.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Correspondence/Subject Files: City Manager/County Administrator: This series consists of incoming and outgoing letters, memorandum, faxes, notes and their attachments, in any format including, but not limited to, paper and electronic mail."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010037",
+    "series_title": "Correspondence/Subject Files: Department or Division Heads",
+    "series_description": "This series consists of incoming and outgoing letters, memoranda, faxes, notes, and their attachments, in any format including, but not limited to, paper and e-mail.",
+    "series_retention_period": "3 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Correspondence/Subject Files: Department or Division Heads: This series consists of incoming and outgoing letters, memoranda, faxes, notes, and their attachments, in any format including, but not limited to, paper and e-mail."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010038",
+    "series_title": "Correspondence/Subject Files: Other Officials",
+    "series_description": "This series consists of incoming and outgoing letters, memoranda, faxes, notes, and their attachments, in any format including, but not limited to, paper and e-mail.",
+    "series_retention_period": "2 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Correspondence/Subject Files: Other Officials: This series consists of incoming and outgoing letters, memoranda, faxes, notes, and their attachments, in any format including, but not limited to, paper and e-mail."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010039",
+    "series_title": "Correspondence/Subject Files: Routine, Administrative - Not Specified Elsewhere",
+    "series_description": "This series consists of incoming and outgoing letters, memoranda, faxes, notes, and their attachments of a routine administrative nature, in any format including, but not limited to, paper and e-mail.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Correspondence/Subject Files: Routine, Administrative - Not Specified Elsewhere: This series consists of incoming and outgoing letters, memoranda, faxes, notes, and their attachments of a routine administrative nature, in any format including, but not limited to, paper and e-mail."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010007",
+    "series_title": "Deeds and Property Files",
+    "series_description": "This series documents local government ownership of real property. COV 15.2-1800 to 1814",
+    "series_retention_period": "10 Years after equipment, facility, or property sold or no longer in use",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Deeds and Property Files: This series documents local government ownership of real property. COV 15.2-1800 to 1814"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010040",
+    "series_title": "Directives",
+    "series_description": "This series documents directives from the city council, city manager, county administrator, or board of supervisors outlining policy to lower levels of authority.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Directives: This series documents directives from the city council, city manager, county administrator, or board of supervisors outlining policy to lower levels of authority."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010041",
+    "series_title": "Directory Listings and Files",
+    "series_description": "Lists of current or former employees and/or phone listings, office listings or lists of contacts or service providers.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Directory Listings and Files: Lists of current or former employees and/or phone listings, office listings or lists of contacts or service providers."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200102",
+    "series_title": "Drafts",
+    "series_description": "This series consists of materials produced during the planning, designing and composing of a public record. This series includes recordings of meetings used to create minutes.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Drafts: This series consists of materials produced during the planning, designing and composing of a public record. This series includes recordings of meetings used to create minutes."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200426",
+    "series_title": "E-Rate Program: After June 30, 2015",
+    "series_description": "This series documents a school or library's eligibility, competitive bidding process, discount calculation, compliance with the Children's Internet Protection Act (CIPA), funding requests, and funding disbursements related to the Schools and Libraries Program (aka E-Rate Program) of the Universal Service Fund administered by the Universal Service Administrative Company (USAC) under the oversight of the Federal Communications Commission (FCC). This series includes, but is not limited to: accreditation or charter documentation, procurement documentation, contracts, worksheets, reports, bills, invoices, and receipts. These records are closed upon the last day of the applicable funding year or the service delivery deadline for the associated funding request, whichever comes later. 47 CFR 54.516(a)",
+    "series_retention_period": "10 Years after closed",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "E-Rate Program: After June 30, 2015: This series documents a school or library's eligibility, competitive bidding process, discount calculation, compliance with the Children's Internet Protection Act (CIPA), funding requests, and funding disbursements related to the Schools and Libraries Program (aka E-Rate Program) of the Universal Service Fund administered by the Universal Service Administrative Company (USAC) under the oversight of the Federal Communications Commission (FCC). This series includes, but is not limited to: accreditation or charter documentation, procurement documentation, contracts, worksheets, reports, bills, invoices, and receipts. These records are closed upon the last day of the applicable funding year or the service delivery deadline for the associated funding request, whichever comes later. 47 CFR 54.516(a)"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200427",
+    "series_title": "E-Rate Program: Before July 1, 2015",
+    "series_description": "This series documents a school or library's eligibility, competitive bidding process, discount calculation, compliance with the Children's Internet Protection Act (CIPA), funding requests, and funding disbursements related to the Schools and Libraries Program (aka E-Rate Program) of the Universal Service Fund administered by the Universal Service Administrative Company (USAC) under the oversight of the Federal Communications Commission (FCC). This series includes, but is not limited to: accreditation or charter documentation, procurement documentation, contracts, technology plans, worksheets, reports, bills, invoices, and receipts. These records are closed upon the last day of the applicable funding year or the service delivery deadline for the associated funding request, whichever comes later. 47 CFR 54.516(a)",
+    "series_retention_period": "5 Years after closed",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "E-Rate Program: Before July 1, 2015: This series documents a school or library's eligibility, competitive bidding process, discount calculation, compliance with the Children's Internet Protection Act (CIPA), funding requests, and funding disbursements related to the Schools and Libraries Program (aka E-Rate Program) of the Universal Service Fund administered by the Universal Service Administrative Company (USAC) under the oversight of the Federal Communications Commission (FCC). This series includes, but is not limited to: accreditation or charter documentation, procurement documentation, contracts, technology plans, worksheets, reports, bills, invoices, and receipts. These records are closed upon the last day of the applicable funding year or the service delivery deadline for the associated funding request, whichever comes later. 47 CFR 54.516(a)"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010043",
+    "series_title": "Employee Suggestion Program Files",
+    "series_description": "This series documents the implementation and control of an employee suggestion plan.",
+    "series_retention_period": "3 Years after last action",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Employee Suggestion Program Files: This series documents the implementation and control of an employee suggestion plan."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010044",
+    "series_title": "Environmental Impact Studies",
+    "series_description": "This series documents the environmental impact of major projects proposed by localities or reviewed by locality officials. COV 15.2-2202",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Environmental Impact Studies: This series documents the environmental impact of major projects proposed by localities or reviewed by locality officials. COV 15.2-2202"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010045",
+    "series_title": "Executive Orders",
+    "series_description": "This series documents orders of the city manager or county administrator.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Executive Orders: This series documents orders of the city manager or county administrator."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010046",
+    "series_title": "Feasibility Studies",
+    "series_description": "This series documents feasibility studies created by or for a locality.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Feasibility Studies: This series documents feasibility studies created by or for a locality."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010047",
+    "series_title": "Finding Aids or File Locators",
+    "series_description": "This series consists of lists created to locate files, records, or artifacts.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Finding Aids or File Locators: This series consists of lists created to locate files, records, or artifacts."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010049",
+    "series_title": "Freedom of Information Act (FOIA) Requests",
+    "series_description": "This series documents the agency's receipt of and response to requests to view official records or retrieve information from official records as per the Virginia Freedom of Information Act (FOIA). This series may include, but is not limited to: requests, responses, and logs. COV 2.2-3700 to 3714",
+    "series_retention_period": "3 Years after last action",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Freedom of Information Act (FOIA) Requests: This series documents the agency's receipt of and response to requests to view official records or retrieve information from official records as per the Virginia Freedom of Information Act (FOIA). This series may include, but is not limited to: requests, responses, and logs. COV 2.2-3700 to 3714"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200812",
+    "series_title": "Grant Projects: Awarded - With Terms",
+    "series_description": "This series documents the application and award process, authorizations, performance monitoring, and close-out process of state, federal, and/or private grant projects participated in or awarded/administered by local agencies that contain contractual terms for records retention. This series may include, but is not limited to: accounts payables and receivables, applications, in-kind/supporting documentation, draw-down requests, evaluations, fiscal reports, notifications, modification requests, and other correspondence and reports.",
+    "series_retention_period": "0 Years after terms of contract met",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Grant Projects: Awarded - With Terms: This series documents the application and award process, authorizations, performance monitoring, and close-out process of state, federal, and/or private grant projects participated in or awarded/administered by local agencies that contain contractual terms for records retention. This series may include, but is not limited to: accounts payables and receivables, applications, in-kind/supporting documentation, draw-down requests, evaluations, fiscal reports, notifications, modification requests, and other correspondence and reports."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010051",
+    "series_title": "Grant Projects: Awarded - Without Terms",
+    "series_description": "This series documents the application and award process, authorizations, performance monitoring, and close-out process of state, federal, and/or private grant projects participated in or awarded/administered by local agencies that do not contain contractual terms for records retention. This series may include, but is not limited to: accounts payables and receivables, applications, in-kind/supporting documentation, draw-down requests, evaluations, fiscal reports, notifications, modification requests, and other correspondence and reports. 2 CFR 200.334",
+    "series_retention_period": "3 Years after project completion",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Grant Projects: Awarded - Without Terms: This series documents the application and award process, authorizations, performance monitoring, and close-out process of state, federal, and/or private grant projects participated in or awarded/administered by local agencies that do not contain contractual terms for records retention. This series may include, but is not limited to: accounts payables and receivables, applications, in-kind/supporting documentation, draw-down requests, evaluations, fiscal reports, notifications, modification requests, and other correspondence and reports. 2 CFR 200.334"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "000182",
+    "series_title": "Grant Projects: Not Awarded",
+    "series_description": "This series documents grant proposals, submitted and received, that were not awarded. This series may include, but is not limited to, letter of intent, application, proposed budget, and notification of denial.",
+    "series_retention_period": "1 Year after decision",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Grant Projects: Not Awarded: This series documents grant proposals, submitted and received, that were not awarded. This series may include, but is not limited to, letter of intent, application, proposed budget, and notification of denial."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010054",
+    "series_title": "Hearings: Administrative",
+    "series_description": "This series documents administrative hearings not listed on another records retention schedule.",
+    "series_retention_period": "3 Years after last action",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Hearings: Administrative: This series documents administrative hearings not listed on another records retention schedule."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010064",
+    "series_title": "History Files",
+    "series_description": "This series documents the history of the locality, its government, its accomplishments, its officials, or employees. This may include material of an exceptional nature that is listed as disposable in this or other general schedules. This series may include, but is not limited to: scrapbooks; photographs; articles; program notes; documentation of events sponsored or funded by the locality; narratives; and printed, audio, or audiovisual histories.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, Archives",
+    "text_to_embed": "History Files: This series documents the history of the locality, its government, its accomplishments, its officials, or employees. This may include material of an exceptional nature that is listed as disposable in this or other general schedules. This series may include, but is not limited to: scrapbooks; photographs; articles; program notes; documentation of events sponsored or funded by the locality; narratives; and printed, audio, or audiovisual histories."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010055",
+    "series_title": "Indexes, Checklists, and Control Lists",
+    "series_description": "This series consists of forms, books, or computer records used for internal control of a process or action that does not act as the only record of final approval of the action or process.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Indexes, Checklists, and Control Lists: This series consists of forms, books, or computer records used for internal control of a process or action that does not act as the only record of final approval of the action or process."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200131",
+    "series_title": "Industrial/Economic Development Authority",
+    "series_description": "This series documents the work of the authority to acquire, own, lease, and dispose of property, as well as make loans, to promote industry and develop trade. This series may include, but is not limited to: bond transcripts, correspondence, and legal documents.",
+    "series_retention_period": "6 Years after final payment",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Industrial/Economic Development Authority: This series documents the work of the authority to acquire, own, lease, and dispose of property, as well as make loans, to promote industry and develop trade. This series may include, but is not limited to: bond transcripts, correspondence, and legal documents."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010057",
+    "series_title": "Information and Public Education Records: Other Records",
+    "series_description": "This series documents public information or education campaigns and materials or items collected from various sources about the locality.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Information and Public Education Records: Other Records: This series documents public information or education campaigns and materials or items collected from various sources about the locality."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010056",
+    "series_title": "Information and Public Education Records: Pamphlets, Visual Aids and/or News Clippings Regarding Historically Significant Events",
+    "series_description": "This series documents public information or education campaigns and materials or items about the locality, collected from public sources.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Information and Public Education Records: Pamphlets, Visual Aids and/or News Clippings Regarding Historically Significant Events: This series documents public information or education campaigns and materials or items about the locality, collected from public sources."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010058",
+    "series_title": "Investigative Reports",
+    "series_description": "This series documents internal investigations of incidents, local officials, employees, departments or operations and policies not covered by another general or specific schedule.",
+    "series_retention_period": "3 Years after last action",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Investigative Reports: This series documents internal investigations of incidents, local officials, employees, departments or operations and policies not covered by another general or specific schedule."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010061",
+    "series_title": "Legal Case Files",
+    "series_description": "This series documents status of legal cases involving the locality, its officials, employees, or departments.",
+    "series_retention_period": "10 Years after last action",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Legal Case Files: This series documents status of legal cases involving the locality, its officials, employees, or departments."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010059",
+    "series_title": "Legal Opinions",
+    "series_description": "This series consists of the opinions requested by the agency, its officials, employees or departments, from the agency counsel, special (outside) counsel, or the Attorney General's office on matters of law.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Legal Opinions: This series consists of the opinions requested by the agency, its officials, employees or departments, from the agency counsel, special (outside) counsel, or the Attorney General's office on matters of law."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010063",
+    "series_title": "Locality Annual Reports",
+    "series_description": "This series consists of reports prepared by or for the locality addressing the \"state\" of the locality, including goals, targets, objectives, and finances.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, Archives",
+    "text_to_embed": "Locality Annual Reports: This series consists of reports prepared by or for the locality addressing the \"state\" of the locality, including goals, targets, objectives, and finances."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010065",
+    "series_title": "Management Reports",
+    "series_description": "This series consists of reports created for internal control or management of a specific function of the local government.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Management Reports: This series consists of reports created for internal control or management of a specific function of the local government."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010093",
+    "series_title": "Microform Records: Inspection Reports",
+    "series_description": "This series documents the inspection and approval of microform prepared by or for locality. This series may include, but is not limited to: copies of background densities and inspection reports. 17VAC15-20-70",
+    "series_retention_period": "3 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Microform Records: Inspection Reports: This series documents the inspection and approval of microform prepared by or for locality. This series may include, but is not limited to: copies of background densities and inspection reports. 17VAC15-20-70"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010094",
+    "series_title": "Microform Records: Processing or Methylene Blue Tests",
+    "series_description": "This series documents testing required to validate the correct processing and development of microform. 17VAC15-20-70",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Microform Records: Processing or Methylene Blue Tests: This series documents testing required to validate the correct processing and development of microform. 17VAC15-20-70"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010029",
+    "series_title": "Minutes: Entity Having Enforcement, Regulatory, or Decision Powers",
+    "series_description": "This series documents the proceedings of meetings of boards, councils, conferences, committees, offices, and other groups having enforcement, regulatory or decision powers. This series includes indexes to minutes.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Minutes: Entity Having Enforcement, Regulatory, or Decision Powers: This series documents the proceedings of meetings of boards, councils, conferences, committees, offices, and other groups having enforcement, regulatory or decision powers. This series includes indexes to minutes."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010030",
+    "series_title": "Minutes: Entity Without Enforcement, Regulatory or Decision Powers",
+    "series_description": "This series documents proceedings of various meetings of advisory boards, councils, conferences, committees, offices, and other groups that do not have enforcement, regulatory, or decision making powers.",
+    "series_retention_period": "3 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Minutes: Entity Without Enforcement, Regulatory or Decision Powers: This series documents proceedings of various meetings of advisory boards, councils, conferences, committees, offices, and other groups that do not have enforcement, regulatory, or decision making powers."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010068",
+    "series_title": "Motion Pictures: Locality Produced or Sponsored",
+    "series_description": "This series documents motion pictures or videos, other than training material and temporary recordings of minutes, prepared by or for locality for a specific purpose.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Motion Pictures: Locality Produced or Sponsored: This series documents motion pictures or videos, other than training material and temporary recordings of minutes, prepared by or for locality for a specific purpose."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010069",
+    "series_title": "Office Instructions or Procedures",
+    "series_description": "This series documents internal guidelines, policies, or instructions for the operation of an office or a function.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Office Instructions or Procedures: This series documents internal guidelines, policies, or instructions for the operation of an office or a function."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200764",
+    "series_title": "Ombudsman",
+    "series_description": "This series documents the confidential, impartial, and informal assistance provided by an Ombudsman to help resolve concerns, conflicts, and issues between individuals and a government office. This series may include, but is not limited to: correspondence, notes, and reporting data.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Ombudsman: This series documents the confidential, impartial, and informal assistance provided by an Ombudsman to help resolve concerns, conflicts, and issues between individuals and a government office. This series may include, but is not limited to: correspondence, notes, and reporting data."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010017",
+    "series_title": "Ordinances and Resolutions",
+    "series_description": "This series documents the adoption of ordinances and resolutions by the board of supervisors or city/town council. COV 15.2-1433; COV 15.2-1425",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Ordinances and Resolutions: This series documents the adoption of ordinances and resolutions by the board of supervisors or city/town council. COV 15.2-1433; COV 15.2-1425"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010070",
+    "series_title": "Organization Files: Administrative Structure and Management",
+    "series_description": "This series documents organization or functions of the locality's major administrative units; also, material about the reorganization of the departments or management structure.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Organization Files: Administrative Structure and Management: This series documents organization or functions of the locality's major administrative units; also, material about the reorganization of the departments or management structure."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010071",
+    "series_title": "Organization Files: Other Records",
+    "series_description": "This series consists of files not directly related to the organization or reorganization of the locality's management structure.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Organization Files: Other Records: This series consists of files not directly related to the organization or reorganization of the locality's management structure."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010073",
+    "series_title": "Photographs and Negatives: Historically Significant",
+    "series_description": "This series documents the locality's organization, special ceremonies, occasions, events, and facilities. This series includes photographs or negatives created by or for locality.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, Archives",
+    "text_to_embed": "Photographs and Negatives: Historically Significant: This series documents the locality's organization, special ceremonies, occasions, events, and facilities. This series includes photographs or negatives created by or for locality."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010075",
+    "series_title": "Photographs and Negatives: Other Material",
+    "series_description": "This series consists of photographs, negatives, image files, filmstrips, or slides produced by the locality, not considered historically significant.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Photographs and Negatives: Other Material: This series consists of photographs, negatives, image files, filmstrips, or slides produced by the locality, not considered historically significant."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010074",
+    "series_title": "Photographs and Negatives: Personnel Identification",
+    "series_description": "This series documents photographs used for identification of employees, contractors, or vendors. This series may include, but is not limited to: negatives, imaging files, requesting paperwork or documentation.",
+    "series_retention_period": "1 Year after separation",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Photographs and Negatives: Personnel Identification: This series documents photographs used for identification of employees, contractors, or vendors. This series may include, but is not limited to: negatives, imaging files, requesting paperwork or documentation."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010076",
+    "series_title": "Planning Files: Administrative",
+    "series_description": "This series documents the planning of administrative changes or projects, major purchases, significant events or occasions not requiring board or council approval of the details.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Planning Files: Administrative: This series documents the planning of administrative changes or projects, major purchases, significant events or occasions not requiring board or council approval of the details."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010018",
+    "series_title": "Policy and Procedure Records",
+    "series_description": "This series documents guidance issued or approved by the city council, city manager, board of supervisors and/or county administrator.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Policy and Procedure Records: This series documents guidance issued or approved by the city council, city manager, board of supervisors and/or county administrator."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010079",
+    "series_title": "Presentation Materials",
+    "series_description": "This series documents presentations given by locality employees. This series may include, but is not limited to: slides, overheads, flip charts, and handouts.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Presentation Materials: This series documents presentations given by locality employees. This series may include, but is not limited to: slides, overheads, flip charts, and handouts."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "101211",
+    "series_title": "Proclamations",
+    "series_description": "This series documents the honoring of specific groups, associations, or people by the Mayor or Board of Supervisors. The series consists may include, but is not limited to: formal proclamation signed by the Mayor or Board of Supervisors.",
+    "series_retention_period": "2 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Proclamations: This series documents the honoring of specific groups, associations, or people by the Mayor or Board of Supervisors. The series consists may include, but is not limited to: formal proclamation signed by the Mayor or Board of Supervisors."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200564",
+    "series_title": "Program and Event Registration",
+    "series_description": "This series documents registration and attendance for events, workshops, conferences, and programs offered by an agency. This series may include, but is not limited to, applications, registration and payment information, and attendance records.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Program and Event Registration: This series documents registration and attendance for events, workshops, conferences, and programs offered by an agency. This series may include, but is not limited to, applications, registration and payment information, and attendance records."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010082",
+    "series_title": "Project Documentation Files",
+    "series_description": "This series documents the design, development, control, or monitoring of a specific project or group of projects.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Project Documentation Files: This series documents the design, development, control, or monitoring of a specific project or group of projects."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010019",
+    "series_title": "Public Hearing Notices",
+    "series_description": "This series documents issuance and publication of notices of public hearings, other than board of supervisors or city/town council meetings. COV 2.2-3707",
+    "series_retention_period": "1 Year after last action",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Public Hearing Notices: This series documents issuance and publication of notices of public hearings, other than board of supervisors or city/town council meetings. COV 2.2-3707"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010083",
+    "series_title": "Public Relations Files: Historically Significant",
+    "series_description": "This series documents information provided to the public at large or specific elements of the public, business, or government communities. This series may include, but is not limited to: pamphlets, speeches, visual aids, news releases and clippings, and publications.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Public Relations Files: Historically Significant: This series documents information provided to the public at large or specific elements of the public, business, or government communities. This series may include, but is not limited to: pamphlets, speeches, visual aids, news releases and clippings, and publications."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010084",
+    "series_title": "Public Relations Files: Other Items",
+    "series_description": "This series documents routine information provided to the public at large or specific elements of the public, business, or government communities. This series may include, but is not limited to: speeches and graphic arts material.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Public Relations Files: Other Items: This series documents routine information provided to the public at large or specific elements of the public, business, or government communities. This series may include, but is not limited to: speeches and graphic arts material."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010086",
+    "series_title": "Publication or Duplication Masters or Proofs",
+    "series_description": "This series consists of materials used to produce publications.",
+    "series_retention_period": "0 Years after superseded, obsolete, or rescinded",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Publication or Duplication Masters or Proofs: This series consists of materials used to produce publications."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010085",
+    "series_title": "Publications: Locality Produced or Sponsored",
+    "series_description": "This series consists of official publications of locality meant for public distribution or general internal distribution. COV 42.1-94",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Publications: Locality Produced or Sponsored: This series consists of official publications of locality meant for public distribution or general internal distribution. COV 42.1-94"
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010087",
+    "series_title": "Recordings, Audio and Visual: Historically Significant",
+    "series_description": "This series consists of audio or visual recordings, created by or for a locality, that are of an enduring historically significant nature or that describe the current function or organization of the locality's major administrative units.",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Recordings, Audio and Visual: Historically Significant: This series consists of audio or visual recordings, created by or for a locality, that are of an enduring historically significant nature or that describe the current function or organization of the locality's major administrative units."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010089",
+    "series_title": "Recordings, Audio and Visual: Other Recordings",
+    "series_description": "This series consists of audio or visual recordings created by or for the locality that are not historically significant.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Recordings, Audio and Visual: Other Recordings: This series consists of audio or visual recordings created by or for the locality that are not historically significant."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200081",
+    "series_title": "Records Management Files: Archival Transfer Forms",
+    "series_description": "This series documents the transfer of permanent records to the Archives at the Library of Virginia. This series includes: Archival Transfer List and Receipt (ARC-1 Form), Archival Transfer Folder List (ARC-2 Form), and Archival Microform Transfer List and Receipt (ARC-3 Form).",
+    "series_retention_period": "",
+    "series_disposition_method": "Permanent, In Agency",
+    "text_to_embed": "Records Management Files: Archival Transfer Forms: This series documents the transfer of permanent records to the Archives at the Library of Virginia. This series includes: Archival Transfer List and Receipt (ARC-1 Form), Archival Transfer Folder List (ARC-2 Form), and Archival Microform Transfer List and Receipt (ARC-3 Form)."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010022",
+    "series_title": "Release Forms: Adults",
+    "series_description": "This series documents individual liability release statements for adults that are required for participation in various programs.",
+    "series_retention_period": "5 Years after end of calendar year",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Release Forms: Adults: This series documents individual liability release statements for adults that are required for participation in various programs."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010026",
+    "series_title": "Release Forms: Minors",
+    "series_description": "This series documents individual liability release statements for children under the age of 18 required for participation in various programs.",
+    "series_retention_period": "5 Years after 18th birthday",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Release Forms: Minors: This series documents individual liability release statements for children under the age of 18 required for participation in various programs."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010096",
+    "series_title": "Reports",
+    "series_description": "This series documents routine reports not listed on any general or special schedule.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Reports: This series documents routine reports not listed on any general or special schedule."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200880",
+    "series_title": "Safety Assessments",
+    "series_description": "This series documents agency concerns or plans regarding potentially threatening persons or situations that have not yet resulted in a specific incident report. This series may include, but is not limited to: trespass lists, reports, anecdotal notes, and correspondence.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Safety Assessments: This series documents agency concerns or plans regarding potentially threatening persons or situations that have not yet resulted in a specific incident report. This series may include, but is not limited to: trespass lists, reports, anecdotal notes, and correspondence."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010097",
+    "series_title": "Safety Records",
+    "series_description": "This series documents accident investigations. This series may include, but is not limited to: accident reports and safety policy statements except those records required by OSHA or the Department of Labor and Industry.",
+    "series_retention_period": "3 Years after last action",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Safety Records: This series documents accident investigations. This series may include, but is not limited to: accident reports and safety policy statements except those records required by OSHA or the Department of Labor and Industry."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010099",
+    "series_title": "Schedule of Daily Activities: Required by Law or Regulation",
+    "series_description": "This series documents the control or recording of the activities of employees other than payroll/hourly-wage records. This series may include, but is not limited to: diaries, logs, and registers.",
+    "series_retention_period": "2 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Schedule of Daily Activities: Required by Law or Regulation: This series documents the control or recording of the activities of employees other than payroll/hourly-wage records. This series may include, but is not limited to: diaries, logs, and registers."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200428",
+    "series_title": "Service Recognition Program",
+    "series_description": "This series documents the process and events for recognizing the service and accomplishments of employees and volunteers. The documentation of the recognition itself should be placed in the individual personnel record. This series may include, but is not limited to: nomination forms, correspondence, reports, and lists.",
+    "series_retention_period": "3 Years after event",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Service Recognition Program: This series documents the process and events for recognizing the service and accomplishments of employees and volunteers. The documentation of the recognition itself should be placed in the individual personnel record. This series may include, but is not limited to: nomination forms, correspondence, reports, and lists."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010105",
+    "series_title": "Surveys: Administrative",
+    "series_description": "This series documents surveys produced by or for the locality for administrative, informational, or research purposes.",
+    "series_retention_period": "2 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Surveys: Administrative: This series documents surveys produced by or for the locality for administrative, informational, or research purposes."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010106",
+    "series_title": "Telephone Logs and Messages",
+    "series_description": "This series documents incoming or outgoing routine telephone calls. This series may include, but is not limited to: message slips, voicemail messages, and call logs.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Telephone Logs and Messages: This series documents incoming or outgoing routine telephone calls. This series may include, but is not limited to: message slips, voicemail messages, and call logs."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "200821",
+    "series_title": "Transit Services Accommodations",
+    "series_description": "This series documents applications for transit accommodation services, including but not limited to paratransit services and reduced fare programs. This series may include, but is not limited to: eligibility applications, denials, approvals, appeal forms, verifications, and physician letters.",
+    "series_retention_period": "5 Years after decision",
+    "series_disposition_method": "Confidential Destruction",
+    "text_to_embed": "Transit Services Accommodations: This series documents applications for transit accommodation services, including but not limited to paratransit services and reduced fare programs. This series may include, but is not limited to: eligibility applications, denials, approvals, appeal forms, verifications, and physician letters."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010109",
+    "series_title": "Vacation or Work Schedules",
+    "series_description": "This series documents employee's time off from work, not created specifically for payroll purposes.",
+    "series_retention_period": "2 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Vacation or Work Schedules: This series documents employee's time off from work, not created specifically for payroll purposes."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010111",
+    "series_title": "Voice Mail/Answering Machine Messages: Relevant to Specific Actions",
+    "series_description": "This series consists of recordings and message slips documenting incoming telephone calls. These messages have a bearing on actions or decisions taken or not taken.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Voice Mail/Answering Machine Messages: Relevant to Specific Actions: This series consists of recordings and message slips documenting incoming telephone calls. These messages have a bearing on actions or decisions taken or not taken."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010113",
+    "series_title": "Work or Production Control Records",
+    "series_description": "This series consists of records, not related to any other existing locality records series, created to project, monitor, control, tabulate, or report the daily work activities of an individual or group other than payroll records.",
+    "series_retention_period": "0 Years after no longer administratively useful",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Work or Production Control Records: This series consists of records, not related to any other existing locality records series, created to project, monitor, control, tabulate, or report the daily work activities of an individual or group other than payroll records."
+  },
+  {
+    "schedule_number": "GS-19",
+    "schedule_title": "Administrative Records",
+    "series_number": "010114",
+    "series_title": "Work Orders: Administrative Copies",
+    "series_description": "This series documents work orders or production orders submitted by locality employees.",
+    "series_retention_period": "3 Years after end of calendar year",
+    "series_disposition_method": "Non-confidential Destruction",
+    "text_to_embed": "Work Orders: Administrative Copies: This series documents work orders or production orders submitted by locality employees."
+  }
+]

@@ -1,0 +1,30 @@
+This ZIP is intentionally FLAT (no nested top-level project folder).
+
+1. Stop npm start with Ctrl+C.
+2. Extract this ZIP to a folder, for example:
+   C:\Users\Haifa Afridi\Downloads\lva-supervisor-feedback-v6.1-flat
+3. From PowerShell run:
+
+Copy-Item `
+  "C:\Users\Haifa Afridi\Downloads\lva-supervisor-feedback-v6.1-flat\*" `
+  "C:\Users\Haifa Afridi\Desktop\lva-week10-build\" `
+  -Recurse -Force
+
+Copy-Item `
+  "C:\Users\Haifa Afridi\Downloads\lva-supervisor-feedback-v6.1-flat\.env.example" `
+  "C:\Users\Haifa Afridi\Desktop\lva-week10-build\.env.example" `
+  -Force
+
+4. Verify:
+   cd "C:\Users\Haifa Afridi\Desktop\lva-week10-build"
+   npm pkg get version
+   npm run verify:update
+   npm test
+
+Expected version: "2.1.1"
+
+5. Start:
+   npm start
+6. In Chrome use Ctrl+Shift+R once to bypass cached frontend files.
+
+Do NOT reseed Milvus. Your .env is not included in this patch.

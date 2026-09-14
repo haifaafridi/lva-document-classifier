@@ -1,0 +1,56 @@
+LVA DOCUMENT CLASSIFIER - FRESH WINDOWS SETUP
+=============================================
+
+1) Extract this ZIP to a new folder.
+2) Open PowerShell in that folder.
+3) Run:
+
+   npm install
+   npm audit
+   npm test
+
+4) Create your local environment file:
+
+   Copy-Item .env.example .env
+
+5) Copy ONLY the credential values from your previous working project's .env into the new .env:
+
+   AZURE_STORAGE_CONNECTION_STRING=...
+   AZURE_STORAGE_CONTAINER=lva-documents
+   MILVUS_ADDRESS=...
+   MILVUS_TOKEN=...
+   MILVUS_COLLECTION=GS_Schedules_All_Localities
+   GEMINI_API_KEY=...
+
+6) Reuse the existing full Milvus collection. DO NOT reseed it if it is already populated:
+
+   npm run milvus:health
+   npm run milvus:status
+   npm run classifier:health
+
+7) Optional: refresh the LOCAL LVA JSON used by model benchmarks/documentation only:
+
+   npm run lva:sync
+   npm run data:validate
+
+8) Start the app:
+
+   npm start
+
+   Open http://localhost:3000
+
+9) Demo/testing:
+
+   npm run chunk:inspect -- ".\test-documents\06_long_recruitment_hiring_packet.pdf"
+   npm run evaluate:retrieval
+   npm run evaluate:end-to-end
+
+10) Optional model comparisons (downloads additional embedding models / uses classifier API calls):
+
+   npm run benchmark:embeddings
+   npm run benchmark:classifiers
+
+IMPORTANT:
+- Do not commit .env.
+- Do not run lva:sync-and-seed against your existing non-empty collection during normal use.
+- Use synthetic/non-confidential documents with a free Gemini developer-tier key.

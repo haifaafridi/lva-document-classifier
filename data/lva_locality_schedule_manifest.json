@@ -1,0 +1,264 @@
+{
+  "generated_at": "2026-09-03T08:00:03.982Z",
+  "schedule_count": 28,
+  "record_series_count": 929,
+  "source": {
+    "official_schedules_url": "https://www.lva.virginia.gov/services/rm/schedules",
+    "searchable_database_url": "https://old.lva.virginia.gov/agencies/records/sched_local/search.asp",
+    "note": "Current schedule list/PDF provenance comes from the official LVA schedule page. Structured fields are read from the LVA locality General Schedules searchable database, then descriptions are matched back to the current official PDFs when possible; unmatched rows safely keep the database description."
+  },
+  "schedules": [
+    {
+      "schedule_number": "GS-01",
+      "schedule_title": "Voter Registration and Elections",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-01.pdf",
+      "record_series_count": 21,
+      "pdf_full_description_matches": 9,
+      "searchable_database_description_fallbacks": 12,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-02",
+      "schedule_title": "Fiscal Records",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-02.pdf",
+      "record_series_count": 20,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 20,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-03",
+      "schedule_title": "Personnel Records",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2026-06/GS-03_0.pdf",
+      "record_series_count": 34,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 34,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-05",
+      "schedule_title": "Assessment Records",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-12/GS-05.pdf",
+      "record_series_count": 17,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 17,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-06",
+      "schedule_title": "Land Use, Land Development and Public Works",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2026-06/GS-06_0.pdf",
+      "record_series_count": 40,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 40,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-07",
+      "schedule_title": "Public Utilities",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-07.pdf",
+      "record_series_count": 52,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 52,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-08",
+      "schedule_title": "Local and Regional Jails",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-09/GS-08.pdf",
+      "record_series_count": 19,
+      "pdf_full_description_matches": 19,
+      "searchable_database_description_fallbacks": 0,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-11",
+      "schedule_title": "Parks and Recreation",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-11.pdf",
+      "record_series_count": 7,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 7,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-12",
+      "schedule_title": "Circuit Court",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-12.pdf",
+      "record_series_count": 91,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 91,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-13",
+      "schedule_title": "Commonwealth's Attorney",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-13.pdf",
+      "record_series_count": 7,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 7,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-14",
+      "schedule_title": "County and Municipal Attorneys",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-14.pdf",
+      "record_series_count": 11,
+      "pdf_full_description_matches": 2,
+      "searchable_database_description_fallbacks": 9,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-15",
+      "schedule_title": "Social Services",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2026-06/GS-15_0.pdf",
+      "record_series_count": 28,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 28,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-16",
+      "schedule_title": "General Services",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2026-06/GS-16_0.pdf",
+      "record_series_count": 117,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 117,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-17",
+      "schedule_title": "Law Enforcement, Fire and Emergency Services",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2026-06/GS-17_0.pdf",
+      "record_series_count": 88,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 88,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-18",
+      "schedule_title": "Community Services Boards",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-18.pdf",
+      "record_series_count": 7,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 7,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-19",
+      "schedule_title": "Administrative Records",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2026-06/GS-19.pdf",
+      "record_series_count": 85,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 85,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-20",
+      "schedule_title": "Health Records",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-09/GS-20.pdf",
+      "record_series_count": 73,
+      "pdf_full_description_matches": 72,
+      "searchable_database_description_fallbacks": 1,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-21",
+      "schedule_title": "Public School",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2026-06/GS-21.pdf",
+      "record_series_count": 93,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 93,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-22",
+      "schedule_title": "Public Library",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-22.pdf",
+      "record_series_count": 7,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 7,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-24",
+      "schedule_title": "Juvenile Residential Services",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-24.pdf",
+      "record_series_count": 9,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 9,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-25",
+      "schedule_title": "Community Corrections Act Program",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-25.pdf",
+      "record_series_count": 4,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 4,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-26",
+      "schedule_title": "Pretrial Services",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-26.pdf",
+      "record_series_count": 4,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 4,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-27",
+      "schedule_title": "Court Appointed Special Advocate",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-27.pdf",
+      "record_series_count": 5,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 5,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-28",
+      "schedule_title": "Treasurer",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-28.pdf",
+      "record_series_count": 20,
+      "pdf_full_description_matches": 1,
+      "searchable_database_description_fallbacks": 19,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-29",
+      "schedule_title": "Criminal Justice Training Academy",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2026-06/GS-29_0.pdf",
+      "record_series_count": 6,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 6,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-31",
+      "schedule_title": "Airports",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2026-06/GS-31.pdf",
+      "record_series_count": 17,
+      "pdf_full_description_matches": 0,
+      "searchable_database_description_fallbacks": 17,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-32",
+      "schedule_title": "Redevelopment and Housing Authority",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-32.pdf",
+      "record_series_count": 40,
+      "pdf_full_description_matches": 1,
+      "searchable_database_description_fallbacks": 39,
+      "pdf_enrichment_error": null
+    },
+    {
+      "schedule_number": "GS-33",
+      "schedule_title": "Information Technology",
+      "pdf_url": "https://www.lva.virginia.gov/sites/default/files/2025-06/GS-33.pdf",
+      "record_series_count": 7,
+      "pdf_full_description_matches": 1,
+      "searchable_database_description_fallbacks": 6,
+      "pdf_enrichment_error": null
+    }
+  ]
+}

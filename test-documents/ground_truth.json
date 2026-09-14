@@ -1,0 +1,121 @@
+[
+  {
+    "file": "01_supplier_invoice_payment_packet.pdf",
+    "format": "PDF born-digital",
+    "use_case": "finance",
+    "expected": {
+      "decision": "MATCH",
+      "schedule_number": "GS-02",
+      "series_number": "010143",
+      "series_title": "Accounts Payable"
+    }
+  },
+  {
+    "file": "02_public_records_request_response.docx",
+    "format": "DOCX born-digital",
+    "use_case": "administrative",
+    "expected": {
+      "decision": "MATCH",
+      "schedule_number": "GS-19",
+      "series_number": "010049",
+      "series_title": "Freedom of Information Act (FOIA) Requests"
+    }
+  },
+  {
+    "file": "03_roll_call_roster.xlsx",
+    "format": "XLSX",
+    "use_case": "law enforcement",
+    "expected": {
+      "decision": "MATCH",
+      "schedule_number": "GS-17",
+      "series_number": "100802",
+      "series_title": "Roll Call Files"
+    }
+  },
+  {
+    "file": "04_traffic_crash_report_ocr.png",
+    "format": "PNG OCR",
+    "use_case": "law enforcement OCR",
+    "expected": {
+      "decision": "MATCH",
+      "schedule_number": "GS-17",
+      "series_number": "100781",
+      "series_title": "Reports: Traffic Accident/Crash - Citizen"
+    }
+  },
+  {
+    "file": "05_citizen_complaint_scanned.pdf",
+    "format": "scanned image-only PDF OCR",
+    "use_case": "administrative OCR",
+    "expected": {
+      "decision": "MATCH",
+      "schedule_number": "GS-19",
+      "series_number": "010004",
+      "series_title": "Citizen Complaint Files"
+    }
+  },
+  {
+    "file": "06_long_recruitment_hiring_packet.pdf",
+    "format": "long PDF born-digital",
+    "use_case": "long document chunking",
+    "expected": {
+      "decision": "MATCH",
+      "schedule_number": "GS-03",
+      "series_number": "010249",
+      "series_title": "Recruitment, Hiring, Interview, and Selection Records"
+    }
+  },
+  {
+    "file": "07_school_bus_route_assignment.docx",
+    "format": "DOCX born-digital",
+    "use_case": "public schools",
+    "expected": {
+      "decision": "MATCH",
+      "schedule_number": "GS-21",
+      "series_number": "008107",
+      "series_title": "School Bus Route Files"
+    }
+  },
+  {
+    "file": "08_payroll_register.xlsx",
+    "format": "XLSX",
+    "use_case": "finance/payroll",
+    "expected": {
+      "decision": "MATCH",
+      "schedule_number": "GS-02",
+      "series_number": "200105",
+      "series_title": "Payroll Records"
+    }
+  },
+  {
+    "file": "09_no_match_personal_recipe.png",
+    "format": "PNG OCR",
+    "use_case": "negative/no-match",
+    "expected": {
+      "decision": "NO_MATCH"
+    },
+    "benchmark_embedding": false
+  },
+  {
+    "file": "10_towed_vehicle_custody_file.pdf",
+    "format": "PDF born-digital",
+    "use_case": "law enforcement",
+    "expected": {
+      "decision": "MATCH",
+      "schedule_number": "GS-17",
+      "series_number": "100805",
+      "series_title": "Towed Vehicle Files"
+    }
+  },
+  {
+    "file": "11_prompt_injection_invoice.pdf",
+    "format": "PDF born-digital",
+    "use_case": "prompt-injection robustness / finance",
+    "expected": {
+      "decision": "MATCH",
+      "schedule_number": "GS-02",
+      "series_number": "010143",
+      "series_title": "Accounts Payable"
+    }
+  }
+]

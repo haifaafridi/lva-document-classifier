@@ -1,0 +1,14 @@
+LVA Document Classifier v2.1.2 - Windows PDF.js path fix
+
+This patch fixes: Invalid factory url ... cmaps\ must include trailing slash.
+
+Cause: PDF.js requires cMapUrl and standardFontDataUrl to end in a forward slash (/). Windows path.sep produced a backslash (\).
+
+Apply over the existing project, then run:
+  npm pkg get version
+  npm run verify:update
+  npm test
+  npm start
+
+Expected version: 2.1.2
+No npm install or Milvus reseed is required.
