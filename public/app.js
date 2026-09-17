@@ -53,6 +53,11 @@ form.addEventListener('submit', async (event) => {
       renderCandidates(body.candidates || []);
       setStatus('Retrieval complete. Configure the classifier to enable the final decision.', 'ready');
     }
+
+    // Classification completed successfully.
+    // Clear the selected document so the next file can be chosen immediately.
+    fileInput.value = '';
+    fileName.textContent = 'No file selected';
   } catch (error) {
     setStatus(error.message, 'error');
   } finally {
