@@ -48,6 +48,9 @@ export const env = Object.freeze({
   milvusIndexType: (process.env.MILVUS_INDEX_TYPE || 'AUTOINDEX').toUpperCase(),
   milvusMetricType: (process.env.MILVUS_METRIC_TYPE || 'COSINE').toUpperCase(),
   milvusAllLocalityCollection: process.env.MILVUS_ALL_LOCALITY_COLLECTION || 'GS_Schedules_All_Localities',
+  milvusReadTimeoutMs: intEnv('MILVUS_READ_TIMEOUT_MS', 6000),
+  milvusReadMaxAttempts: intEnv('MILVUS_READ_MAX_ATTEMPTS', 2),
+  milvusRetryBaseDelayMs: intEnv('MILVUS_RETRY_BASE_DELAY_MS', 300),
 
   embeddingModel: process.env.EMBEDDING_MODEL || 'Xenova/bge-small-en-v1.5',
   embeddingDtype: process.env.EMBEDDING_DTYPE || 'q8',

@@ -5,6 +5,7 @@ import {
   IndexType,
 } from '@zilliz/milvus2-sdk-node';
 import { env, requireMilvusEnv } from '../config/env.js';
+import { withMilvusReadRetry } from './milvusReadRetry.js';
 
 let clientPromise;
 
@@ -146,16 +147,24 @@ export async function getCollectionStatus() {
 
 export async function searchVector(vector, limit = 3) {
   const client = await getMilvusClient();
-  const result = await client.search({
-    collection_name: env.milvusCollection,
-    anns_field: 'vector',
-    data: [vector],
-    limit,
-    output_fields: [
-      'schedule_number', 'schedule_title', 'series_number', 'series_title',
-      'series_description', 'series_retention_period', 'series_disposition_method', 'text_to_embed',
-    ],
-  });
+  const result = await withMilvusReadRetry(
+    'vector search',
+    () => client.search({
+      collection_name: env.milvusCollection,
+      anns_field: 'vector',
+      data: [vector],
+      limit,
+      timeout: env.milvusReadTimeoutMs,
+      output_fields: [
+        'schedule_number', 'schedule_title', 'series_number', 'series_title',
+        'series_description', 'series_retention_period', 'series_disposition_method', 'text_to_embed',
+      ],
+    }),
+    {
+      maxAttempts: env.milvusReadMaxAttempts,
+      baseDelayMs: env.milvusRetryBaseDelayMs,
+    }
+  );
   return Array.isArray(result?.results) ? result.results : [];
 }
 
@@ -171,15 +180,23 @@ function escapeFilterString(value) {
 export async function getSeriesMetadata(scheduleNumber, seriesNumber) {
   const client = await getMilvusClient();
   const filter = `schedule_number == "${escapeFilterString(scheduleNumber)}" and series_number == "${escapeFilterString(seriesNumber)}"`;
-  const result = await client.query({
-    collection_name: env.milvusCollection,
-    filter,
-    limit: 1,
-    output_fields: [
-      'schedule_number', 'schedule_title', 'series_number', 'series_title',
-      'series_description', 'series_retention_period', 'series_disposition_method', 'text_to_embed',
-    ],
-  });
+  const result = await withMilvusReadRetry(
+    'metadata query',
+    () => client.query({
+      collection_name: env.milvusCollection,
+      filter,
+      limit: 1,
+      timeout: env.milvusReadTimeoutMs,
+      output_fields: [
+        'schedule_number', 'schedule_title', 'series_number', 'series_title',
+        'series_description', 'series_retention_period', 'series_disposition_method', 'text_to_embed',
+      ],
+    }),
+    {
+      maxAttempts: env.milvusReadMaxAttempts,
+      baseDelayMs: env.milvusRetryBaseDelayMs,
+    }
+  );
   const rows = result?.data ?? result?.results ?? [];
   return Array.isArray(rows) ? (rows[0] ?? null) : null;
 }
