@@ -1,209 +1,261 @@
-# LVA Document Classifier - Weeks 1-10 Complete Prototype
+# LVA Document Classifier
 
-SPS Summer Internship 2026 prototype for matching county documents to Library of Virginia (LVA) locality record series.
+> An end-to-end document classification system for mapping local-government records to the most relevant **Library of Virginia (LVA) locality record series**.
 
-This package carries the working Node.js project through the Week 10 targets: long-document chunking, semantic retrieval, embedding-model evaluation, OCR/multi-format extraction, a final classification flow, structured LLM output, canonical metadata mapping, testing utilities, and synthetic demo documents.
+[![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Build LVA Docker Image](https://github.com/haifaafridi/lva-document-classifier/actions/workflows/build-image.yml/badge.svg)](https://github.com/haifaafridi/lva-document-classifier/actions/workflows/build-image.yml)
+![Azure](https://img.shields.io/badge/Deployed-Azure%20Container%20Apps-0078D4?logo=microsoftazure&logoColor=white)
+![Version](https://img.shields.io/badge/version-2.2.0-blue)
 
-## What is implemented
+## Live Demo
 
-### Knowledge base (one-time / refresh only)
+**Production deployment:**  
+https://lva-document-classifier.politemushroom-97d8e0b8.polandcentral.azurecontainerapps.io/
 
-1. `npm run lva:sync` discovers the current **General Schedules for Localities** from the live LVA schedule page and normalizes their record series into `data/lva_schedules.json`.
-2. `text_to_embed` is built from each record-series title + description.
-3. `Xenova/bge-small-en-v1.5` converts each `text_to_embed` value to a normalized **384-dimensional** vector.
-4. The vector and LVA metadata are stored in Milvus/Zilliz. The source JSON contains no manual `id`; Milvus supplies an `INT64` AutoID primary key.
-5. The existing working cloud collection from the earlier phase is expected to be `GS_Schedules_All_Localities`.
+> The public demo is intended for synthetic/non-confidential documents.
 
-### Runtime document flow
+## Project Highlights
 
-`Upload -> Azure Blob -> Extract/OCR -> Token-aware chunks + overlap -> Temporary query embeddings -> Milvus Top-K per chunk -> Aggregate Top 3 record-series candidates -> Gemini classifier -> Validate candidate choice -> Query Milvus for canonical metadata -> Display final result`
+- **929 LVA record-series entries** across **28 locality schedules**
+- **384-dimensional BGE embeddings** using `Xenova/bge-small-en-v1.5`
+- **Hybrid retrieval:** dense Milvus/Zilliz vector search + BM25-style lexical search + fusion
+- **Gemini 3.5 Flash-Lite** for final grounded classification and reasoning
+- Supports **PDF, scanned PDF, DOC/DOCX, XLS/XLSX, PNG, JPEG, BMP, WEBP and GIF**
+- **Tesseract.js OCR** with Sharp preprocessing for scanned/image documents
+- Token-aware long-document chunking with overlap instead of truncating the document
+- Original uploads stored in **Azure Blob Storage**
+- Permanent reference vectors stored in **Zilliz/Milvus**
+- Uploaded-user embeddings are **temporary query vectors and are never inserted into Milvus**
+- Deployed with **Docker + GitHub Actions + Azure Container Registry + Azure Container Apps**
+- Stage-level latency instrumentation for storage, extraction/OCR, retrieval, Gemini and metadata lookup
+- Retry protection for transient Milvus/Zilliz gRPC read failures
 
-Important: **uploaded-document embeddings are never inserted into Milvus.** Only the LVA knowledge-base vectors are persisted.
+## What the System Does
 
-## Week 8 implementation: chunking + robust retrieval
+A user uploads a document. The system extracts its text, handles OCR when required, creates temporary document embeddings, retrieves the most relevant LVA record-series candidates, and asks Gemini to make a final grounded `MATCH` / `NO_MATCH` decision.
 
-- Uses the **actual embedding-model tokenizer**, not word-count approximations.
-- Default chunk size: **380 tokens**.
-- Default overlap: **64 tokens**.
-- BGE has a 512-position limit; 380 leaves room for the retrieval query instruction and special tokens.
-- Removes duplicate chunks and preserves document coverage if a very long file produces more than the configured maximum.
-- Creates a temporary embedding for each selected chunk.
-- Searches Milvus for each chunk, then aggregates repeated record-series hits across chunks before choosing the final Top 3.
-- This avoids the old behavior of truncating a long document to its beginning.
+The UI returns supervisor-friendly metadata such as:
 
-Inspect the strategy on a document:
-
-```powershell
-npm run chunk:inspect -- ".\test-documents\06_long_recruitment_hiring_packet.pdf"
-```
-
-## Week 9 implementation: model comparison
-
-### Embedding models included in the benchmark
-
-- `Xenova/bge-small-en-v1.5` - production model, 384D, 512 max positions.
-- `Xenova/e5-small-v2` - 384D alternative with `query:` / `passage:` prefixes.
-- `Xenova/gte-small` - 384D alternative.
-
-The production Milvus collection remains BGE because the stored vector space must match the query model. The benchmark embeds the local LVA dataset independently for each model and compares **Top-1 accuracy, Top-3 recall, MRR, and latency**.
-
-```powershell
-npm run lva:sync
-npm run benchmark:embeddings
-```
-
-> The embedding benchmark downloads additional local models and can use extra disk space. It is optional for the live demo.
-
-### Classification models explored/benchmarked
-
-The default is **Gemini 3.5 Flash-Lite** because it is a current stable high-throughput model with a free developer tier and structured outputs. The benchmark can compare:
-
-- `gemini-3.5-flash-lite`
-- `gemini-3.1-flash-lite`
-- `gemini-3.5-flash`
-
-```powershell
-npm run benchmark:classifiers
-```
-
-## Week 9/10 classification flow
-
-The classifier receives only:
-
-- selected document chunks;
-- the Top 3 Milvus candidates and their official metadata;
-- explicit classification instructions.
-
-It must return structured JSON containing:
-
-- `decision`: `MATCH` or `NO_MATCH`;
-- `schedule_number`;
-- `series_number`;
-- short reasoning.
-
-The application then validates that a `MATCH` is **one of the retrieved candidate pairs**. It cannot invent an LVA number. After validation, the selected Schedule Number + Series Number is queried back from Milvus and mapped to canonical metadata for display:
-
-- Schedule Title
-- Schedule Number
-- Series Title
+- Record Series
 - Series Number
+- Schedule Number and Title
 - Retention Period
 - Disposition Method
+- Official Series Description
 - Classification Reasoning
+- Extraction / OCR information
+- Processing-time breakdown
 
-See `docs/CLASSIFICATION_FLOW_AND_PROMPT.md`.
-
-## Week 10 format/OCR flow
-
-Supported input formats (maximum 2 MB):
-
-- born-digital and scanned PDF;
-- `.docx` and legacy `.doc`;
-- `.xlsx` / `.xls`;
-- PNG / JPEG / BMP / WEBP / GIF images.
-
-Extraction strategy:
-
-- PDF: PDF.js text layer first; only pages with too little digital text fall back to OCR.
-- Scanned PDF: PDF.js renders the page to an image, then Tesseract.js OCR reads it.
-- Images: preprocessing with Sharp + Tesseract.js OCR.
-- DOCX: Mammoth.
-- DOC: `word-extractor`.
-- Excel: SheetJS.
-
-This remains a Node.js pipeline; no Python microservice or Docker service is required.
-
-## Fresh setup on Windows / PowerShell
-
-### 1. Extract the ZIP
-
-For example:
+## Architecture
 
 ```text
-C:\Users\Haifa Afridi\Desktop\lva-document-classifier-week10
+User Upload
+    |
+    v
+Azure Blob Storage
+    |
+    v
+Text Extraction / OCR
+    |
+    v
+Token-aware Chunking
+    |
+    v
+Temporary BGE Query Embeddings
+    |
+    +-----------------------+
+    |                       |
+    v                       v
+Milvus Dense Search    BM25-style Lexical Search
+    |                       |
+    +-----------+-----------+
+                |
+                v
+          Hybrid Fusion
+                |
+                v
+        Top 3 LVA Candidates
+                |
+                v
+       Gemini 3.5 Flash-Lite
+                |
+                v
+ Candidate Validation + Canonical
+      Metadata Lookup in Milvus
+                |
+                v
+             UI Result
 ```
 
-Open PowerShell in that folder.
+## Knowledge Base
 
-### 2. Install dependencies
+The current reference knowledge base contains:
 
-Use Node.js 20 or newer:
+- **28** locality General Schedules
+- **929** LVA record-series rows
+- **384-dimensional** normalized vectors
+- Milvus `Int64` **AutoID** primary key
+
+For each reference series, useful official fields such as the series title and description are combined into `text_to_embed` and embedded with:
+
+```text
+Xenova/bge-small-en-v1.5
+dtype: q8
+pooling: mean
+dimension: 384
+normalized: true
+```
+
+Only the official LVA reference embeddings are permanently stored.
+
+## Long-Document Handling
+
+Large documents are not reduced to only their first page or first few paragraphs.
+
+The system uses token-aware overlapping chunks:
+
+```text
+Chunk size: 380 tokens
+Overlap:    64 tokens
+```
+
+Each selected chunk receives a temporary embedding, relevant candidates are retrieved, and evidence is aggregated across chunks. This helps preserve useful information that may appear later in a document.
+
+## Hybrid Retrieval
+
+The production retriever combines two complementary signals:
+
+### Dense semantic retrieval
+BGE embeddings + Milvus/Zilliz identify semantically similar record-series descriptions even when wording differs.
+
+### Lexical retrieval
+A local BM25-style search preserves strong exact terminology such as record-specific names and administrative terms.
+
+The two result sets are fused before returning the final **Top 3 candidates** to Gemini.
+
+## Final Classification
+
+Gemini is the final decision layer, but it is deliberately constrained.
+
+It receives:
+
+- selected document evidence;
+- the Top 3 retrieved LVA candidates;
+- official metadata for those candidates;
+- strict structured-output instructions.
+
+Gemini returns:
+
+```json
+{
+  "decision": "MATCH | NO_MATCH",
+  "schedule_number": "...",
+  "series_number": "...",
+  "reasoning": "..."
+}
+```
+
+For a `MATCH`, the backend validates that the selected schedule/series pair exists in the retrieved candidate set. Canonical metadata is then queried from Milvus before the result is displayed.
+
+## Supported Formats
+
+| Format | Extraction strategy |
+|---|---|
+| Born-digital PDF | PDF.js text extraction |
+| Scanned PDF | Page rendering + Tesseract.js OCR |
+| DOCX | Mammoth |
+| DOC | `word-extractor` |
+| XLS / XLSX | SheetJS |
+| Images | Sharp preprocessing + Tesseract.js OCR |
+
+Maximum upload size is currently **2 MB**.
+
+## Technology Stack
+
+| Area | Technology |
+|---|---|
+| Backend | Node.js / Express |
+| Cloud file storage | Azure Blob Storage |
+| Embeddings | `Xenova/bge-small-en-v1.5` |
+| Vector database | Zilliz Cloud / Milvus |
+| Lexical retrieval | Local BM25-style search |
+| Final classifier | Gemini 3.5 Flash-Lite |
+| OCR | Tesseract.js |
+| Image preprocessing | Sharp |
+| PDF extraction | PDF.js |
+| DOCX extraction | Mammoth |
+| Spreadsheet extraction | SheetJS |
+| Containerization | Docker |
+| Image registry | Azure Container Registry |
+| Hosting | Azure Container Apps |
+| CI / image build | GitHub Actions |
+
+## Evaluation Results
+
+Current controlled project baselines:
+
+| Evaluation | Result |
+|---|---:|
+| Unit tests | **19 / 19 passed** |
+| Retrieval Top-1 | **80%** |
+| Retrieval Top-3 | **100%** |
+| End-to-end classification | **11 / 11 correct** |
+| Format / OCR suite | **100%** |
+
+A separate fresh 10-document test pack was also tested manually through both the local backend and deployed frontend:
+
+- Local backend: **10 / 10 passed**
+- Deployed frontend: **10 / 10 passed**
+
+These are controlled project results and should not be interpreted as universal accuracy guarantees.
+
+## Reliability and Observability
+
+The backend records stage-level processing time for:
+
+```text
+storage
+extraction / OCR
+retrieval
+Gemini classification
+metadata lookup
+total
+```
+
+Retrieval timing is also broken down into chunking, embedding, dense search, lexical search and fusion.
+
+Read-only Milvus operations include bounded retry handling for transient gRPC conditions such as `DEADLINE_EXCEEDED` and `UNAVAILABLE`.
+
+## Local Setup
+
+### Requirements
+
+- Node.js 20+
+- npm
+- Azure Blob Storage credentials
+- Zilliz/Milvus endpoint and token
+- Gemini API key
+
+### Install
 
 ```powershell
+git clone https://github.com/haifaafridi/lva-document-classifier.git
+cd lva-document-classifier
 npm install
-npm audit
-npm test
 ```
 
-The first embedding/OCR run may download/cache local model or OCR assets.
-
-### 3. Create `.env`
+Create the local environment file:
 
 ```powershell
 Copy-Item .env.example .env
 ```
 
-Copy your working values from the old project's `.env` for:
+Fill `.env` locally. **Never commit `.env` or credentials.**
 
-```env
-AZURE_STORAGE_CONNECTION_STRING=...
-AZURE_STORAGE_CONTAINER=lva-documents
-MILVUS_ADDRESS=...
-MILVUS_TOKEN=...
-MILVUS_COLLECTION=GS_Schedules_All_Localities
-```
-
-Do **not** paste credentials into source code and do not commit `.env`.
-
-### 4. Add a Gemini API key for Week 10 classification
-
-Create/use a Google AI Studio Gemini Developer API key and set:
-
-```env
-GEMINI_API_KEY=...
-CLASSIFIER_MODEL=gemini-3.5-flash-lite
-```
-
-Without a Gemini key, the application still runs retrieval and shows the Top 3 candidates, but it cannot produce the final Week 10 classification.
-
-**Privacy note:** use only synthetic/non-confidential records with the free developer tier. Google's current pricing page states that free-tier content may be used to improve products. For real confidential county documents, use an organization-approved paid/enterprise deployment and data-handling policy.
-
-### 5. Check existing services
-
-If you are reusing the already-seeded cloud collection:
+Then run:
 
 ```powershell
-npm run milvus:health
-npm run milvus:status
-npm run classifier:health
-```
-
-Do **not** reseed a working non-empty collection.
-
-### 6. Refresh local LVA JSON for benchmarks/documentation
-
-This does not write to Milvus:
-
-```powershell
-npm run lva:sync
-npm run data:validate
-```
-
-The LVA site is live and schedules are updated over time, so the row count can change. In the user's previous successful sync, 28 locality schedules produced 929 record-series rows.
-
-### 7. If you are starting with an empty/new Milvus collection only
-
-Use the one-time combined command:
-
-```powershell
-npm run lva:sync-and-seed
-```
-
-Never use this for normal runtime requests.
-
-### 8. Start
-
-```powershell
+npm test
 npm start
 ```
 
@@ -213,50 +265,103 @@ Open:
 http://localhost:3000
 ```
 
-The public frontend deliberately does **not** display extracted text, vectors, chunk internals, or Milvus status.
+## Important Environment Variables
 
-## Recommended demo sequence
+The repository provides `.env.example`. Important runtime settings include:
 
-1. `npm run milvus:status` - show that the all-locality collection is loaded (internal demo only).
-2. `npm run chunk:inspect -- ".\test-documents\06_long_recruitment_hiring_packet.pdf"` - show chunking + overlap.
-3. Start the UI with `npm start`.
-4. Classify a born-digital PDF.
-5. Classify the long PDF.
-6. Classify an OCR image or scanned PDF.
-7. Show final metadata + reasoning in the frontend.
-8. If asked about accuracy, show `ground_truth.json` and run the evaluation scripts.
+```text
+AZURE_STORAGE_CONNECTION_STRING
+AZURE_STORAGE_CONTAINER
 
-See `docs/DEMO_GUIDE.md` for the exact script and questions to expect.
+MILVUS_ADDRESS
+MILVUS_TOKEN
+MILVUS_COLLECTION
+MILVUS_VECTOR_DIM
 
-## Testing commands
+GEMINI_API_KEY
+CLASSIFIER_MODEL
+
+EMBEDDING_MODEL
+EMBEDDING_DTYPE
+```
+
+Actual credentials are intentionally excluded from the repository.
+
+## Useful Commands
 
 ```powershell
 npm test
+npm run milvus:status
 npm run evaluate:retrieval
 npm run evaluate:end-to-end
-npm run benchmark:embeddings
-npm run benchmark:classifiers
+npm run evaluate:formats
+npm run chunk:inspect -- ".\test-documents\06_long_recruitment_hiring_packet.pdf"
 ```
 
-Evaluation reports are saved under `benchmarks/`.
+Do not reseed an existing working production collection unless a deliberate data refresh has been reviewed.
 
-## Important technical distinction
+## Deployment
 
-- **Embedding model:** BGE converts text to mathematical vectors for similarity search. It does not make the final records decision.
-- **Milvus:** retrieves the most semantically relevant stored LVA candidates. It is not the final classifier.
-- **Classification model:** Gemini evaluates the document against the retrieved candidate descriptions and selects one valid candidate or `NO_MATCH`.
+```text
+Push to main
+    |
+    v
+GitHub Actions
+    |
+    v
+Docker image build
+    |
+    v
+Azure Container Registry
+    |
+    v
+Azure Container Apps
+```
 
-## Research references
+Production images are tagged with both `latest` and the Git commit SHA so a deployed revision can be tied to an exact source version.
 
-- Library of Virginia retention schedules: https://www.lva.virginia.gov/services/rm/schedules
-- LVA records-management manual: https://www.lva.virginia.gov/services/rm/resources/vprmm
-- BGE Small Transformers.js model: https://huggingface.co/Xenova/bge-small-en-v1.5
-- Gemini models: https://ai.google.dev/gemini-api/docs/models
-- Gemini pricing: https://ai.google.dev/gemini-api/docs/pricing
-- Gemini structured outputs: https://ai.google.dev/gemini-api/docs/structured-output
+## Security and Privacy
+
+- `.env` is not committed.
+- API keys and cloud credentials are supplied through local environment variables / Azure secrets.
+- User-document embeddings are not persisted in Milvus.
+- Public demo usage should use synthetic or non-confidential documents.
+- Classification output should be reviewed before being used for real records-retention or destruction decisions.
+
+## Repository Structure
+
+```text
+.
+├── public/                # Frontend
+├── src/                   # Backend services and application logic
+├── scripts/               # Evaluation, data and deployment utilities
+├── tests/                 # Automated tests
+├── test-documents/        # Synthetic evaluation documents
+├── data/                  # Local LVA reference data
+├── docs/                  # Technical documentation
+├── benchmarks/            # Evaluation outputs (when generated)
+├── .github/workflows/     # GitHub Actions
+├── Dockerfile
+├── package.json
+└── README.md
+```
+
+## Project Scope
+
+This project was developed as an **SPS Summer Internship 2026** prototype for automated records classification.
+
+It demonstrates a complete production-style pipeline covering data preparation, embeddings, vector retrieval, OCR, long-document handling, grounded LLM classification, testing, observability and cloud deployment.
+
+## Reference Sources
+
+- Library of Virginia Records Management: https://www.lva.virginia.gov/services/rm/
+- LVA Retention Schedules: https://www.lva.virginia.gov/services/rm/schedules
+- BGE Small English v1.5: https://huggingface.co/Xenova/bge-small-en-v1.5
+- Milvus: https://milvus.io/
+- Zilliz Cloud: https://zilliz.com/
+- Gemini API: https://ai.google.dev/gemini-api
 - Tesseract.js: https://github.com/naptha/tesseract.js
-- Milvus vector search: https://milvus.io/docs/single-vector-search.md
 
-## Scope / safety
+---
 
-This is an internship prototype. Automated output should be reviewed against current LVA policy before making real retention/destruction decisions. LVA itself recommends using the current live schedule versions because schedules are updated regularly.
+**Note:** LVA schedules change over time. Always verify real retention/disposition decisions against the current official Library of Virginia schedule and organizational policy.
